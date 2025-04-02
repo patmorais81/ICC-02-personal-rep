@@ -28,15 +28,15 @@ while true; do
 
     case $choice in 
 
-        1) echo " -> Check Network Interface Information";exit 0;;
+        1) ip a;exit 0;;
 
-        2) echo "Ping a host";exit 0;;
+        2) ping "google.com";exit 0;;
 
-        3) echo "Port Scan with Nmap";exit 0;;
+        3) nmap -sn 127.0.0.1;exit 0;;
 
-        4) echo "Display Routing Table";exit 0;;
+        4) netstat -r;exit 0;;
 
-        5) echo "Traceroute to Host";exit 0;;
+        5) traceroute google.com;exit 0;;
 
         6) echo "Exiting ...";exit 0;;
 
